@@ -1,13 +1,14 @@
 {
-  "pages":[
+  "pages": [
     "pages/nav/nav",
     "pages/index/index",
     "pages/share/share"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "矿大头像戳",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
 }

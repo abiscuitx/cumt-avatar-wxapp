@@ -7,12 +7,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    navPageBackPicSrc: '../../resource/images/nav.png',
+    navPageBackPicSrc: '../../resource/images/nav.jpg',
     flyingstudio: "Powered by FlyingStudio \nMade by Icestains 白乌鸫 TItanium Alan",
     isShow: false,
   },
 
-  onReady: function () {
+  onReady: function() {
     wx.getSystemInfo({
       success: wxgetSystemInfo => {
         app.globalData.canvasWidth = wxgetSystemInfo.windowWidth;
@@ -20,7 +20,7 @@ Page({
     })
   },
 
-  onShareAppMessage: function (res) {
+  onShareAppMessage: function(res) {
     return {
       title: '快来给你换上一个矿大专属头像吧！',
       path: '/pages/nav/nav',
@@ -28,13 +28,13 @@ Page({
     }
   },
 
-  goIndex: function () {
+  goIndex: function() {
     wx.navigateTo({
       url: '../index/index',
     })
   },
 
-  flyingstudio: function () {
+  flyingstudio: function() {
     let that = this;
     if (!this.data.isShow) {
       that.setData({

@@ -9,6 +9,9 @@
 }
 
 .drawPart {
+  position: relative;
+  transform: translateY(-50%);
+  top: 62vh;
   width: 100vw;
   min-height: 100vw;
   display: flex;
@@ -17,19 +20,22 @@
 }
 
 .getAvatarBtn {
-  width: 58vw;
-  height: 58vw;
-  top: 51vh;
+  width: 60vw;
+  height: 60vw;
+  
+  top: 50%;
+  position: absolute;
   transform: translateY(-50%);
-  background: none;
+  background: white;
   border: none;
   line-height: 56vw;
 }
 
 .avatar {
-  width: 58vw;
-  height: 58vw;
-  top: 51vh;
+  width: 60vw;
+  height: 60vw;
+  top: 50%;
+  position: absolute;
   transform: translateY(-50%);
 }
 
@@ -46,7 +52,7 @@
   width: 70rpx;
   height: 80rpx;
   background: none;
-  top: 48vh;
+  top: 58vh;
   line-height: 80rpx;
 }
 
@@ -61,7 +67,8 @@
 .downBtn {
   display: flex;
   /* bottom: 260rpx; */
-  bottom: 19vh;
+  /* bottom: 12vh; */
+  bottom: 0;
   position: absolute;
   flex-direction: row;
 }

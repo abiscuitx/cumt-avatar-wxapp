@@ -9,19 +9,16 @@ Page({
     changedLogo: false,
     logoPath: 1,
 
-    navPageBackPicSrc: '../../resource/images/avatar.png',
+    navPageBackPicSrc: '../../resource/images/avatar.jpg',
     btn_getAvatar: '../../resource/images/btn_1.png',
     btn_changeAvatar: '../../resource/images/btn_2.png',
     btn_leftArrow: '../../resource/images/arrow_1.png',
     btn_rightArrow: '../../resource/images/arrow_2.png',
-    logo_0: '../../resource/images/logo_0.png',
-    logo_1: '../../resource/images/logo_1.png',
-    logo_2: '../../resource/images/logo_2.png',
-    logo_3: '../../resource/images/logo_3.png',
+    logoArr: []
 
   },
 
-  onShareAppMessage: function (res) {
+  onShareAppMessage: function(res) {
     return {
       title: '快来给你换上一个矿大专属头像吧！',
       path: '/pages/nav/nav',
@@ -29,11 +26,14 @@ Page({
     }
   },
 
-  onReady: function () {
+  onReady: function() {
     this.runWhenFinishReady()
   },
 
-  runWhenFinishReady: function () {
+  runWhenFinishReady: function() {
+    for (let i = 0; i <= 9; i++) {
+      this.data.logoArr.push(`../../resource/images/logo_${i}.png`)
+    }
     if (app.globalData.avatarUrl) {
       this.setData({
         hasUserInfo: true
@@ -51,43 +51,43 @@ Page({
   },
 
   //获取用户信息
-  getUserInfo: function (e) {
+  getUserInfo: function(e) {
+    wx.showLoading({
+      title: '正在生成头像',
+    })
     app.globalData.avatarUrl = e.detail.userInfo.avatarUrl.replace(/132/g, '0');
     app.globalData.avatarUrlOrigin = e.detail.userInfo.avatarUrl.replace(/132/g, '0');
+
     this.setData({
       hasUserInfo: true
     })
     this.createImage(app.globalData.avatarUrl)
-    wx.showLoading({
-      title: '正在生成头像',
-    })
+    setTimeout(function() {
+      wx.hideLoading()
+    }, 1000)
   },
 
   //draw
-  drawCanvas: function (logoPath, avatarPath) {
+  drawCanvas: function(logoPath, avatarPath) {
     let that = this;
     let ctx = wx.createCanvasContext('myCanvas');
-    let cWidth = app.globalData.canvasWidth * 58 / 100;
-    ctx.drawImage(avatarPath, cWidth / 8, cWidth / 8, cWidth * 3 / 4, cWidth * 3 / 4);
-    switch (logoPath) {
-      case 0:
-        ctx.drawImage(app.globalData.avatarUrl, 0, 0, cWidth, cWidth);
-        ctx.drawImage(that.data.logo_0, cWidth / 12, cWidth * 7 / 12, cWidth / 3, cWidth / 3);
-        break;
-      case 1:
-        ctx.drawImage(that.data.logo_1, 0, 0, cWidth, cWidth);
-        break;
-      case 2:
-        ctx.drawImage(that.data.logo_2, 0, 0, cWidth, cWidth);
-        break;
-      case 3:
-        ctx.drawImage(that.data.logo_3, 0, 0, cWidth, cWidth);
-        break;
+    let cWidth = app.globalData.canvasWidth * 60 / 100;
+    
+    if (1 <= logoPath && logoPath <= 4 || logoPath === 12) {
+      ctx.drawImage(avatarPath, cWidth / 8, cWidth / 8, cWidth * 3 / 4, cWidth * 3 / 4);
+      ctx.drawImage(that.data.logoArr[logoPath], 0, 0, cWidth, cWidth);
+    } else if (logoPath === 0) {
+      ctx.drawImage(avatarPath, 0, 0, cWidth, cWidth);
+      ctx.drawImage(that.data.logoArr[0], cWidth / 12, cWidth * 7 / 12, cWidth / 3, cWidth / 3);
+    } else if (5 <= logoPath && logoPath <= 11) {
+      ctx.drawImage(avatarPath, cWidth / 16, cWidth / 16, cWidth * 7 / 8, cWidth * 7 / 8);
+      ctx.drawImage(that.data.logoArr[logoPath], 0, 0, cWidth, cWidth);
     }
+
     ctx.draw();
     wx.getImageInfo({
       src: avatarPath,
-      success: function (res) {
+      success: function(res) {
         let ctxHide = wx.createCanvasContext('myCanvasHide');
         let cWidthHide = res.width;
         let cHeightHide = res.height;
@@ -95,21 +95,15 @@ Page({
           cWidthHide = 1000;
         }
         app.globalData.WidthOrigin = cWidthHide
-        ctxHide.drawImage(avatarPath, cWidthHide / 8, cWidthHide / 8, cWidthHide * 3 / 4, cWidthHide * 3 / 4);
-        switch (logoPath) {
-          case 0:
-            ctxHide.drawImage(app.globalData.avatarUrl, 0, 0, cWidthHide, cWidthHide);
-            ctxHide.drawImage(that.data.logo_0, cWidthHide / 12, cWidthHide * 7 / 12, cWidthHide / 3, cWidthHide / 3);
-            break;
-          case 1:
-            ctxHide.drawImage(that.data.logo_1, 0, 0, cWidthHide, cWidthHide);
-            break;
-          case 2:
-            ctxHide.drawImage(that.data.logo_2, 0, 0, cWidthHide, cWidthHide);
-            break;
-          case 3:
-            ctxHide.drawImage(that.data.logo_3, 0, 0, cWidthHide, cWidthHide);
-            break;
+        if (1 <= logoPath && logoPath <= 4) {
+          ctxHide.drawImage(avatarPath, cWidthHide / 8, cWidthHide / 8, cWidthHide * 3 / 4, cWidthHide * 3 / 4);
+          ctxHide.drawImage(that.data.logoArr[logoPath], 0, 0, cWidthHide, cWidthHide);
+        } else if (logoPath === 0) {
+          ctxHide.drawImage(avatarPath, 0, 0, cWidthHide, cWidthHide);
+          ctxHide.drawImage(that.data.logoArr[0], cWidthHide / 12, cWidthHide * 7 / 12, cWidthHide / 3, cWidthHide / 3);
+        } else if (5 <= logoPath && logoPath <= 9) {
+          ctxHide.drawImage(avatarPath, cWidthHide / 16, cWidthHide / 16, cWidthHide * 7 / 8, cWidthHide * 7 / 8);
+          ctxHide.drawImage(that.data.logoArr[logoPath], 0, 0, cWidthHide, cWidthHide);
         }
         ctxHide.draw();
         wx.hideLoading()
@@ -120,11 +114,11 @@ Page({
 
   // createNewImg
   //创建新头像
-  createImage: function (picpath) {
+  createImage: function(picpath) {
     let that = this;
     wx.downloadFile({
       url: picpath,
-      success: function (res) {
+      success: function(res) {
         if (res.statusCode === 200) {
           app.globalData.avatarUrl = res.tempFilePath;
           app.globalData.avatarUrlOrigin = res.tempFilePath;
@@ -135,7 +129,7 @@ Page({
   },
 
   //保存图片。
-  savePic: function () {
+  savePic: function() {
     let that = this;
     if (this.data.hasUserInfo) {
       let WidthOrigin = app.globalData.WidthOrigin
@@ -147,7 +141,7 @@ Page({
         destWidth: WidthOrigin,
         destHeight: WidthOrigin,
         canvasId: 'myCanvasHide',
-        success: function (res) {
+        success: function(res) {
           app.globalData.shareAvatarUrl = res.tempFilePath
           wx.saveImageToPhotosAlbum({
             filePath: res.tempFilePath,
@@ -156,7 +150,7 @@ Page({
                 title: '已保存',
                 content: '新头像已经保存到手机相册里啦！快去换上专属于你的矿大头像!',
                 showCancel: false,
-                success: function (res) {
+                success: function(res) {
                   that.goShare();
                 }
               })
@@ -182,13 +176,13 @@ Page({
   },
 
   //选择本地图片
-  chooseLocalImage: function () {
+  chooseLocalImage: function() {
     let that = this;
     wx.chooseImage({
       count: 1, // 默认9
       sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
       sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
-      success: function (res) {
+      success: function(res) {
         var tempFilePaths = res.tempFilePaths;
         app.globalData.avatarUrl = tempFilePaths[0];
         that.setData({
@@ -206,14 +200,13 @@ Page({
     })
   },
 
-  changeLogoRight: function () {
+  changeLogoRight: function() {
     let that = this;
     if (app.globalData.avatarUrl) {
-      var tempNum = 1;
-      if (that.data.logoPath < 3) {
+      let tempNum = 1;
+      if (that.data.logoPath < that.data.logoArr.length - 1) {
         tempNum = that.data.logoPath + 1;
-      }
-      else {
+      } else {
         tempNum = 0;
       }
       that.setData({
@@ -223,15 +216,14 @@ Page({
     }
   },
 
-  changeLogoLeft: function () {
+  changeLogoLeft: function() {
     let that = this;
     if (app.globalData.avatarUrl) {
       var tempNum = 1;
       if (that.data.logoPath > 0) {
         tempNum = that.data.logoPath - 1;
-      }
-      else {
-        tempNum = 3;
+      } else {
+        tempNum = that.data.logoArr.length - 1;
       }
       that.setData({
         logoPath: tempNum,
@@ -240,10 +232,9 @@ Page({
     }
   },
 
-  goShare: function () {
+  goShare: function() {
     wx.navigateTo({
       url: '../share/share',
     })
   },
 })
-

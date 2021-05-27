@@ -60,7 +60,7 @@ Page({
   get_token() {
     let that = this
     wx.request({
-      url: 'http://wetoken.abiscuit.net/token?name=wetoken',
+      url: 'https://wetoken.abiscuit.net/token?name=wetoken',
       method: 'get',
       data: {
 
@@ -81,7 +81,7 @@ Page({
     let that = this
     console.log(url)
     wx.request({
-      url: 'http://wechat.abiscuit.com/?access_token=' + that.data.token,
+      url: 'https://wechat.abiscuit.com/?access_token=' + that.data.token,
       method: 'post',
       data: {
         media: url

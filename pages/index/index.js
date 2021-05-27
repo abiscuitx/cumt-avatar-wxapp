@@ -15,7 +15,7 @@ Page({
     btn_rightArrow: '../../resource/images/arrow_2.png',
     logoArr: []
   },
-  
+
 
   onLoad() {
     if (wx.getUserProfile) {
@@ -56,7 +56,44 @@ Page({
       this.drawCanvas(this.data.logoPath, app.globalData.avatarUrl)
     }
   },
+  /* 获取token */
+  get_token() {
+    let that = this
+    wx.request({
+      url: 'http://wetoken.abiscuit.net/token?name=wetoken',
+      method: 'get',
+      data: {
 
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        console.log(res.data)
+        that.data.token = res.data.token
+        console.log(that.data.token)
+      }
+    })
+  },
+
+  /* 检查敏感信息 */
+  check(url) {
+    let that = this
+    console.log(url)
+    wx.request({
+      url: 'http://wechat.abiscuit.com/?access_token=' + that.data.token,
+      method: 'post',
+      data: {
+        media: url
+      },
+      header: {
+        'content-type': 'application/x-www-form-urlencoded' // 默认值
+      },
+      success(res) {
+      }
+    })
+    return true
+  },
   //获取用户信息
   getUserProfile(e) {
     wx.getUserProfile({
@@ -79,10 +116,10 @@ Page({
     let ctx = wx.createCanvasContext('myCanvas');
     let cWidth = app.globalData.canvasWidth * 60 / 100;
 
-    if (logoPath === 0 ) {
+    if (logoPath === 0) {
       ctx.drawImage(avatarPath, 0, 0, cWidth, cWidth);
       ctx.drawImage(that.data.logoArr[0], cWidth / 12, cWidth * 7 / 12, cWidth / 3, cWidth / 3);
-    }else if (logoPath === 1) {
+    } else if (logoPath === 1) {
       ctx.drawImage(avatarPath, cWidth / 8, cWidth / 8, cWidth * 3 / 4, cWidth * 3 / 4);
       ctx.drawImage(that.data.logoArr[logoPath], 0, 0, cWidth, cWidth);
     } else if (2 <= logoPath && logoPath <= 3) {
@@ -100,7 +137,7 @@ Page({
     } else if (logoPath === 12) {
       ctx.drawImage(avatarPath, cWidth * 1 / 14, cWidth * 1 / 14, cWidth * 6 / 7, cWidth * 6 / 7);
       ctx.drawImage(that.data.logoArr[logoPath], 1, -5, cWidth, cWidth);
-    }else if (logoPath === 13) {
+    } else if (logoPath === 13) {
       ctx.drawImage(avatarPath, cWidth * 1 / 14, cWidth * 1 / 14, cWidth * 6 / 7, cWidth * 6 / 7);
       ctx.drawImage(that.data.logoArr[logoPath], 2, 0, cWidth, cWidth);
     } else if (logoPath === 14) {
@@ -120,10 +157,10 @@ Page({
         }
         app.globalData.WidthOrigin = cWidthHide
 
-        if (logoPath === 0 ) {
+        if (logoPath === 0) {
           ctxHide.drawImage(avatarPath, 0, 0, cWidthHide, cWidthHide);
           ctxHide.drawImage(that.data.logoArr[0], cWidthHide / 12, cWidthHide * 7 / 12, cWidthHide / 3, cWidthHide / 3);
-        }else if (logoPath === 1) {
+        } else if (logoPath === 1) {
           ctxHide.drawImage(avatarPath, cWidthHide / 8, cWidthHide / 8, cWidthHide * 3 / 4, cWidthHide * 3 / 4);
           ctxHide.drawImage(that.data.logoArr[logoPath], 0, 0, cWidthHide, cWidthHide);
         } else if (2 <= logoPath && logoPath <= 3) {
@@ -220,23 +257,26 @@ Page({
   //选择本地图片
   chooseLocalImage: function () {
     let that = this;
+    this.get_token();
     wx.chooseImage({
-      count: 1, // 默认9
       sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
       sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
       success: function (res) {
         var tempFilePaths = res.tempFilePaths;
         app.globalData.avatarUrl = tempFilePaths[0];
-        that.setData({
-          hasUserInfo: true
-        })
-        if (!(that.data.changedLogo)) {
+        let status = that.check(res.tempFilePaths[0])
+        console.log(status)
+        if (status) {
+          that.setData({
+            src: res.tempFilePaths[0],
+            hasUserInfo: true,
+          })
+          that.createImage(app.globalData.avatarUrl);
           that.drawCanvas(that.data.logoPath, app.globalData.avatarUrl);
-
         } else {
-          that.drawCanvas(that.data.logoPath, app.globalData.avatarUrl);
-          that.data.changedLogo = false;
-          that.changeLogo();
+          wx.showToast({
+            title: '图片存在风险，请重新上传'
+          })
         }
       },
     })

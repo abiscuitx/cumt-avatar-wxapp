@@ -4,7 +4,7 @@
   <text class="shareText">{{shareText}}</text>
 
   <view class="footer">
-     <image class="shareBtnPic" bindtap="toFriends" src="{{shareToPicSrc}}"></image> 
+     <image class="shareBtnPic" src="{{shareToPicSrc}}"></image> 
     <button class="shareBtn toMoments" bindtap="toMoments"></button>
   </view>
 </view>

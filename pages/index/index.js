@@ -69,9 +69,7 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success(res) {
-        console.log(res.data)
         that.data.token = res.data.token
-        console.log(that.data.token)
       }
     })
   },
@@ -79,9 +77,8 @@ Page({
   /* 检查敏感信息 */
   check(url) {
     let that = this
-    console.log(url)
     wx.request({
-      url: 'https://wechat.abiscuit.com/?access_token=' + that.data.token,
+      url: 'https://wechat.abiscuit.net?access_token=' + that.data.token,
       method: 'post',
       data: {
         media: url
@@ -265,7 +262,6 @@ Page({
         var tempFilePaths = res.tempFilePaths;
         app.globalData.avatarUrl = tempFilePaths[0];
         let status = that.check(res.tempFilePaths[0])
-        console.log(status)
         if (status) {
           that.setData({
             src: res.tempFilePaths[0],

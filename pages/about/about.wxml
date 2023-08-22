@@ -1,0 +1,123 @@
+<view class="pyqItem">
+  <view>
+    <image class="avatarStyle" src='../../static/about/ercode.jpg'></image>
+  </view>
+  <view class="pyq-right">
+    <!-- 用户昵称 -->
+    <view class="userNickNameStyle">矿大头像戳
+    </view>
+    <!-- 文本内容 -->
+    <view class="pyqContentText" catchlongpress="showSelect">
+      <text decode="{{true}}" user-select="true">&emsp;&emsp;希望同学们能通过各类主题、各种形式的头像框，体会矿大“努力努力、行健天同功”的自强不息精神，“守坚定、戒骄盈、忍劳苦”的艰苦奋斗精神，“于科学有真发明、于社会有真贡献”的追求卓越精神。</text>
+    </view>
+    <!-- 底部信息及按钮 -->
+    <view class="bottomStyle">
+      <!-- 发布日期 -->
+      <view class="center">
+        <yy-date-item>
+          <text class="bottomDateStyle">2023年7月31日 08:00</text>
+        </yy-date-item>
+      </view>
+      <!-- 点赞/评论按钮 -->
+      <view class="goodBtn" bindtap="showGoodCommentBtn">
+        <view class="goodBtnDot"></view>
+        <view class="goodBtnDot"></view>
+      </view>
+    </view>
+    <view class="mypyqComment">
+      <!-- 评论内容栏 -->
+      <view class="commentContentStyle">
+        <!-- 用户评论ITEM -->
+        <view class="CommentItem">
+          <!-- 评论用户信息 -->
+          <view class="CommentItemRight">
+            <!-- 评论信息栏 -->
+            <view class="commentTop">
+              <text class="commentNickName">2023迎新季制作团队：<text class="commentContentText">主办方：中国矿业大学学生会、中国矿业大学研究生会、矿大青年融媒体中心；协办方：各二级学院学生会；技术支持：中国矿业大学翔工作室。</text></text>
+
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="line"></view>
+<view class="pyqItem">
+  <view>
+    <image class="avatarStyle" src='../../static/about/logo.jpg'></image>
+  </view>
+  <view class="pyq-right">
+    <!-- 用户昵称 -->
+    <view class="userNickNameStyle">FlyingStudio
+    </view>
+    <!-- 文本内容 -->
+    <view class="pyqContentText" catchlongpress="showSelect">
+      <text decode="{{true}}" user-select="true">&emsp;&emsp;中国矿业大学翔工作室始建于2000年，是一个以兴趣为导向，技术为核心，产品为驱动，不断为矿大师生提供互联网技术产品，旨在培养矿大互联网技术人才的学生团队。\n&emsp;&emsp;二十多年来，这里云集了无数技术、设计、运营的学长学姐，开发过众多风靡矿大的校园产品。我们的成员来自全校各个学院， 新老成员遍布腾讯、阿里、美团、字节等各个互联网公司，致力于开发、算法、安全、设计、产品等多个岗位。\n&emsp;&emsp;欢迎各位新生通过工作室官网，下载体验矿小助App。更多有关交流反馈，工作室招新的问题，请加评论区QQ群了解。</text>
+    </view>
+    <!-- 外层 -->
+    <view class="picture-out">
+      <view class="weui-uploader__bd">
+        <!-- 预览层 -->
+        <view class="weui-uploader__files" id="uploaderFiles">
+          <view class="weui-uploader__file" bindtap="previewImage" id="https://pic.abiscuit.net/cumtpic/static/about/wx01.png">
+            <image class="weui-uploader__img" src="https://pic.abiscuit.net/cumtpic/static/about/wx01.png" mode="aspectFill" />
+          </view>
+          <view class="weui-uploader__file" bindtap="previewImage" id="https://pic.abiscuit.net/cumtpic/static/about/wx02.png">
+            <image class="weui-uploader__img" src="https://pic.abiscuit.net/cumtpic/static/about/wx02.png" mode="aspectFill" />
+          </view>
+          <view class="weui-uploader__file" bindtap="previewImage" id="https://pic.abiscuit.net/cumtpic/static/about/wx03.png">
+            <image class="weui-uploader__img" src="https://pic.abiscuit.net/cumtpic/static/about/wx03.png" mode="aspectFill" />
+          </view>
+          <view class="weui-uploader__file" bindtap="previewImage" id="https://pic.abiscuit.net/cumtpic/static/about/wx04.png">
+            <image class="weui-uploader__img" src="https://pic.abiscuit.net/cumtpic/static/about/wx04.png" mode="aspectFill" />
+          </view>
+          <view class="weui-uploader__file" bindtap="previewImage" id="https://pic.abiscuit.net/cumtpic/static/about/wx05.png">
+            <image class="weui-uploader__img" src="https://pic.abiscuit.net/cumtpic/static/about/wx05.png" mode="aspectFill" />
+          </view>
+          <view class="weui-uploader__file" bindtap="previewImage" id="https://pic.abiscuit.net/cumtpic/static/about/wx06.png">
+            <image class="weui-uploader__img" src="https://pic.abiscuit.net/cumtpic/static/about/wx06.png" mode="aspectFill" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 底部信息及按钮 -->
+    <view class="bottomStyle">
+      <!-- 发布日期 -->
+      <view class="center">
+        <yy-date-item>
+          <text class="bottomDateStyle">2020年6月1日 00:00</text>
+        </yy-date-item>
+      </view>
+      <!-- 点赞/评论按钮 -->
+      <view class="goodBtn" bindtap="showGoodCommentBtn">
+        <view class="goodBtnDot"></view>
+        <view class="goodBtnDot"></view>
+      </view>
+    </view>
+    <view class="mypyqComment">
+      <!-- 评论内容栏 -->
+      <view class="commentContentStyle">
+        <!-- 用户评论ITEM -->
+        <view class="CommentItem">
+          <!-- 评论用户信息 -->
+          <view class="CommentItemRight">
+            <!-- 评论信息栏 -->
+            <view class="commentTop " catchlongpress="copy" id="https://atcutm.com">
+              <text class="commentNickName">工作室官网(长按复制)：              <text class="commentContentText">https://atcutm.com</text></text>
+            </view>
+          </view>
+        </view>
+        <view class="CommentItem">
+          <!-- 评论用户信息 -->
+          <view class="CommentItemRight">
+            <!-- 评论信息栏 -->
+            <view class="commentTop " catchlongpress="copy" id="238908591">
+              <text class="commentNickName">交流QQ群(长按复制)：              <text class="commentContentText">238908591</text></text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

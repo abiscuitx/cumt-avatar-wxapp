@@ -60,23 +60,23 @@
       <view class="weui-uploader__bd">
         <!-- 预览层 -->
         <view class="weui-uploader__files" id="uploaderFiles">
-          <view class="weui-uploader__file" bindtap="previewImage" id="https://pic.abiscuit.net/cumtpic/static/about/wx01.png">
-            <image class="weui-uploader__img" src="https://pic.abiscuit.net/cumtpic/static/about/wx01.png" mode="aspectFill" />
+          <view class="weui-uploader__file" bindtap="previewImage" id="../../static/index/static/about/wx01.png">
+            <image class="weui-uploader__img" src="../../static/index/static/about/wx01.png" mode="aspectFill" />
           </view>
-          <view class="weui-uploader__file" bindtap="previewImage" id="https://pic.abiscuit.net/cumtpic/static/about/wx02.png">
-            <image class="weui-uploader__img" src="https://pic.abiscuit.net/cumtpic/static/about/wx02.png" mode="aspectFill" />
+          <view class="weui-uploader__file" bindtap="previewImage" id="../../static/index/static/about/wx02.png">
+            <image class="weui-uploader__img" src="../../static/index/static/about/wx02.png" mode="aspectFill" />
           </view>
-          <view class="weui-uploader__file" bindtap="previewImage" id="https://pic.abiscuit.net/cumtpic/static/about/wx03.png">
-            <image class="weui-uploader__img" src="https://pic.abiscuit.net/cumtpic/static/about/wx03.png" mode="aspectFill" />
+          <view class="weui-uploader__file" bindtap="previewImage" id="../../static/index/static/about/wx03.png">
+            <image class="weui-uploader__img" src="../../static/index/static/about/wx03.png" mode="aspectFill" />
           </view>
-          <view class="weui-uploader__file" bindtap="previewImage" id="https://pic.abiscuit.net/cumtpic/static/about/wx04.png">
-            <image class="weui-uploader__img" src="https://pic.abiscuit.net/cumtpic/static/about/wx04.png" mode="aspectFill" />
+          <view class="weui-uploader__file" bindtap="previewImage" id="../../static/index/static/about/wx04.png">
+            <image class="weui-uploader__img" src="../../static/index/static/about/wx04.png" mode="aspectFill" />
           </view>
-          <view class="weui-uploader__file" bindtap="previewImage" id="https://pic.abiscuit.net/cumtpic/static/about/wx05.png">
-            <image class="weui-uploader__img" src="https://pic.abiscuit.net/cumtpic/static/about/wx05.png" mode="aspectFill" />
+          <view class="weui-uploader__file" bindtap="previewImage" id="../../static/index/static/about/wx05.png">
+            <image class="weui-uploader__img" src="../../static/index/static/about/wx05.png" mode="aspectFill" />
           </view>
-          <view class="weui-uploader__file" bindtap="previewImage" id="https://pic.abiscuit.net/cumtpic/static/about/wx06.png">
-            <image class="weui-uploader__img" src="https://pic.abiscuit.net/cumtpic/static/about/wx06.png" mode="aspectFill" />
+          <view class="weui-uploader__file" bindtap="previewImage" id="../../static/index/static/about/wx06.png">
+            <image class="weui-uploader__img" src="../../static/index/static/about/wx06.png" mode="aspectFill" />
           </view>
         </view>
       </view>

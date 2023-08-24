@@ -14,10 +14,10 @@ Page({
       data: {
         // 预览图片列表
         files: [
-          'https://pic.abiscuit.net/cumtpic/static/about/wx01.png',
-          'https://pic.abiscuit.net/cumtpic/static/about/wx02.png',
-          'https://pic.abiscuit.net/cumtpic/static/about/wx03.png',
-          'https://pic.abiscuit.net/cumtpic/static/about/wx04.png',
+          '../../static/index/static/about/wx01.png',
+          '../../static/index/static/about/wx02.png',
+          '../../static/index/static/about/wx03.png',
+          '../../static/index/static/about/wx04.png',
         ],
     },
       onShareTimeline: function () {

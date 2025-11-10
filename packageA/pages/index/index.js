@@ -392,7 +392,7 @@ Page({
     get_token() {
         let that = this
         wx.request({
-            url: 'pic.abiscuit.net/static///wetoken.abiscuit.net/token?name=wetoken',
+            url: 'pic.abiscuit.net/token?name=wetoken',
             method: 'get',
             data: {
 

@@ -1,20 +1,23 @@
-# cumt-avatar-wxapp-122th
+# cumt-avatar-wxapp-112th
+
 > 文档分析：Claude Sonnet 4.5
 > 生成日期：2025-11-10
 
-本仓库为中国矿业大学头像戳（112周年）微信小程序版本库，包含小程序源码、资源与页面组件，便于本地调试与发布。
+本仓库为中国矿业大学头像戳（112 周年）微信小程序版本库，包含小程序源码、资源与页面组件，便于本地调试与发布。
+
 - main 分支：主分支，通常与 prod 分支保持一致。
 - prod 生产分支：线上运行的正式版本，自动拉取更新。
 - release 开发分支：代码归档。
 
-|![](https://raw.githubusercontent.com/abiscuitx/github-pic/main/web/20251110155458543_e3ec6631aae27c6b3add5613a9d26156.png)|![](https://raw.githubusercontent.com/abiscuitx/github-pic/main/web/20251110155633780_438846925b27a6a1e8b3dced8870500f.png)|![](https://raw.githubusercontent.com/abiscuitx/github-pic/main/web/20251110155722195_db498ca0a407ba934276914768a6e5bf.png)|
-|:---:|:---:|:---:|
+| ![](https://raw.githubusercontent.com/abiscuitx/github-pic/main/web/20251110155458543_e3ec6631aae27c6b3add5613a9d26156.png) | ![](https://raw.githubusercontent.com/abiscuitx/github-pic/main/web/20251110155633780_438846925b27a6a1e8b3dced8870500f.png) | ![](https://raw.githubusercontent.com/abiscuitx/github-pic/main/web/20251110155722195_db498ca0a407ba934276914768a6e5bf.png) |
+| :-------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
 
 ## 项目简介
 
 该小程序用于生成和分享矿大头像戳素材，包含若干页面（首页、导航、分享等）和资源。适合作为校园活动、纪念日素材生成工具。
 
 项目特性：
+
 - 轻量级微信小程序实现，易于本地预览与打包。
 - 内置图片资源与模板，支持分享到社交平台。
 
@@ -44,12 +47,15 @@ cumt-avatar-wxapp-122th/
 ### 核心功能/目录
 
 #### 首页（pages/index）
+
 负责入口展示、素材选择与生成入口逻辑。
 
 #### 导航（pages/nav）
+
 提供功能跳转与说明信息。
 
 #### 分享（pages/share）
+
 实现生成结果的分享预览与保存。
 
 ### 工程化配置

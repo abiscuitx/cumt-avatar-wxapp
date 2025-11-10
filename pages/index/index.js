@@ -51,147 +51,147 @@ Page({
                 src: "../../static/index/frame/cumt/01研矿大校风.png",
             }, {
                 name: "矿大校训",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/02研矿大校训.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/02研矿大校训.png",
             }, {
                 name: "矿大校歌",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/03研矿大校歌.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/03研矿大校歌.png",
             }, {
                 name: "矿大精神",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/04研矿大精神.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/04研矿大精神.png",
             }, {
                 name: "迎新01",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/05学迎新01.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/05学迎新01.png",
             }, {
                 name: "迎新02",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/06学迎新02.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/06学迎新02.png",
             }, {
                 name: "迎新03",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/07学迎新03.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/07学迎新03.png",
             }, {
                 name: "迎新04",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/08学迎新04.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/08学迎新04.png",
             }, {
                 name: "黑天鹅",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/09研黑天鹅.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/09研黑天鹅.png",
             }, {
                 name: "小鹿",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/10研鹿.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/10研鹿.png",
             }, {
                 name: "鸵鸟",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/11研鸵鸟.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/11研鸵鸟.png",
             }, {
                 name: "图书馆1",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/12融图书馆.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/12融图书馆.png",
             }, {
                 name: "图书馆2",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/14融图书馆.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/14融图书馆.png",
             }, {
                 name: "东门",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/13融东门.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/13融东门.png",
             }, {
                 name: "虹桥",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/15融虹桥.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/15融虹桥.png",
             }, {
                 name: "焦作路矿学堂",
-                src: "https://pic.abiscuit.net/cumtpic/static/index/frame/cumt/16融焦作路矿学堂.png",
+                src: "https://pic.atcumt.com/cumt-avatar/index/frame/cumt/16融焦作路矿学堂.png",
             }],
             school: [{
                     name: "矿业学院",
                     src: "../../static/index/frame/school/16矿业学院.png",
                 }, {
                     name: "矿业学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/17矿业学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/17矿业学院.png",
                 },
                 {
                     name: "安全学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/29安全学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/29安全学院.png",
                 }, {
                     name: "安全学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/30安全学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/30安全学院.png",
                 },{
                     name: "力土学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/14力土学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/14力土学院.png",
                 }, {
                     name: "力土学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/15力土学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/15力土学院.png",
                 }, {
                     name: "机电学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/21机电学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/21机电学院.png",
                 }, {
                     name: "机电学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/22机电学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/22机电学院.png",
                 }, {
                     name: "信控学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/03信控学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/03信控学院.png",
                 }, {
                     name: "信控学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/04信控学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/04信控学院.png",
                 },
                 {
                     name: "资源学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/01资源学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/01资源学院.png",
                 }, {
                     name: "资源学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/02资源学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/02资源学院.png",
                 }, {
                     name: "环测学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/23环测学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/23环测学院.png",
                 }, {
                     name: "电气学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/26电气学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/26电气学院.png",
                 }, {
                     name: "电气学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/27电气学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/27电气学院.png",
                 }, {
                     name: "能动学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/10能源学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/10能源学院.png",
                 }, {
                     name: "能动学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/11能源学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/11能源学院.png",
                 }, {
                     name: "材物学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/28材物学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/28材物学院.png",
                 }, {
                     name: "数学学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/07数学学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/07数学学院.png",
                 }, {
                     name: "计算机院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/20计算机院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/20计算机院.png",
                 }, {
                     name: "经管学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/18经管学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/18经管学院.png",
                 }, {
                     name: "经管学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/19经管学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/19经管学院.png",
                 }, {
                     name: "公管学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/24公管学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/24公管学院.png",
                 }, {
                     name: "公管学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/25公管学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/25公管学院.png",
                 }, {
                     name: "马克思院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/12马克思院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/12马克思院.png",
                 }, {
                     name: "马克思院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/13马克思院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/13马克思院.png",
                 },
                 {
                     name: "外文学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/05外文学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/05外文学院.png",
                 }, {
                     name: "设计学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/08设计学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/08设计学院.png",
                 },
                 {
                     name: "设计学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/31设计学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/31设计学院.png",
                 }, {
                     name: "人文学院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/09人文学院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/09人文学院.png",
                 }, {
                     name: "孙越崎院",
-                    src: "https://pic.abiscuit.net/cumtpic/static/index/frame/school/06孙越崎院.png",
+                    src: "https://pic.atcumt.com/cumt-avatar/index/frame/school/06孙越崎院.png",
                 },
             ],
             //   history: [{

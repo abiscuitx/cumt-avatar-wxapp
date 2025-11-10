@@ -47,7 +47,6 @@
         "tabIndent": "insertSpaces",
         "tabSize": 4
     },
-    "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
     "projectname": "code",
     "condition": {}
 }

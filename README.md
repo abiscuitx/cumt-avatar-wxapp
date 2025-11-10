@@ -1,10 +1,10 @@
 # cumt-avatar-wxapp-114th
 
-本仓库为中国矿业大学头像戳（109 周年）微信小程序版本库，包含小程序源码、资源与页面组件，便于本地调试与发布。
+本仓库为中国矿业大学头像戳（114 周年）微信小程序版本库，包含小程序源码、资源与页面组件，便于本地调试与发布。
 
 - main 分支：主分支，通常与 prod 分支保持一致。
 - prod 生产分支：线上运行的正式版本，自动拉取更新。
 - release 开发分支：代码归档。
 
-| ![](https://raw.githubusercontent.com/abiscuitx/github-pic/main/web/20251110172014666_544c2da46027cebb8be9f5dfd25a5d7a.png) | ![](https://raw.githubusercontent.com/abiscuitx/github-pic/main/web/20251110172032849_3d35291ee45003d669380ad94c12f2a9.png) | ![](https://raw.githubusercontent.com/abiscuitx/github-pic/main/web/20251110172117881_0af2050f47c4ca6d7bc02ce16c7ebeb8.png) |
+| ![](https://raw.githubusercontent.com/abiscuitx/github-pic/main/web/20251110194630591_5e823fadb613a0995e01d9eaaebb55e0.png) | ![](https://raw.githubusercontent.com/abiscuitx/github-pic/main/web/20251110194724647_a7d232bf8c6f2ab0e6667d01667abf1f.png) | ![](https://raw.githubusercontent.com/abiscuitx/github-pic/main/web/20251110194707418_28b349559414d1e11cf719fdd03d2769.png) |
 | :-------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
